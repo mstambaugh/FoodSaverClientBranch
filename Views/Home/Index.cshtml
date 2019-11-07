@@ -1,10 +1,12 @@
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Welcome to the Food Saver Database!";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<h1>Welcome to Food Saver webpage.  To get a food schedule please navigate to the shopping list, to browse our recipes please navigate to that section</h1>
 
-<button class="btn btn-default">@Html.ActionLink("Take a look at Our Recipes", "Index", "Recipes")</button>
-<button class="btn btn-default">@Html.ActionLink("Add recipes to create a shopping list", "Index", "ShoppingList")</button>
+<h2>Navigate to the shopping list to plan weekly meals within your budget, or view all recipes</h2> 
+
+
+<button class="btn btn-dark">@Html.ActionLink("All Recipes", "Index", "Recipes")</button>
+<button class="btn btn-dark">@Html.ActionLink("Add Recipes to shopping list", "Index", "ShoppingList")</button>
